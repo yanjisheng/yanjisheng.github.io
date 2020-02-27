@@ -110,6 +110,10 @@ section {
     transition: all .5s;
 }
 
+#skills .card {
+    height: 85%;
+}
+
 .card:hover {
     box-shadow: 0 15px 30px -12px rgba(50,50,93,.10);
     transition: all .5s;
