@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" value="yanjisheng">
+<title>上海好耐电子科技有限公司 - 产品信息</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<h1>上海好耐电子科技有限公司</h1>
+<ul class="navigator">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="introduction.html">公司介绍</a></li>
+    <li><a href="products.html">产品信息</a></li>
+    <li><a href="news.html">新闻动态</a></li>
+    <li><a href="contact.html">联系方式</a></li>
+</ul>
+<h3>产品信息</h3>
+<ul class="products">
+    <li>制动测试相关</li>
+    <li><a href="#NVH">NVH</a></li>
+    <li><a href="#DTV">DTV</a></li>
+    <li><a href="#sensor">制动测试相关传感器及组件</a></li>
+    <li><a href="#sensor">制动测试系统</a></li>
+</ul>
+<ul class="products">
+    <li>微振动力及力矩测试系统</li>
+    <li><a href="#NVH">微振动测力台</a></li>
+    <li><a href="#DTV">力矩测量系统</a></li>
+</ul>
+<ul class="products">
+    <li>切削加工测量系统</li>
+    <li><a href="#NVH">测力台</a></li>
+    <li><a href="#DTV">切削相关模块产品</a></li>
+    <li><a href="#sensor">切削测量系统</a></li>
+</ul>
+<h2>制动测试相关</h2>
+<h3 id="NVH">NVH</h3>
+<div class="product"><a href="MT9.html"><img src="gongzhonghao.jpg"><div>MT9设备<br>MT9系统作为上海好耐车载数据采集设备MT6的升级换代产品，它把坚固牢靠的适应性和便携式、模块化的多用性整合在一起。</div></a></div>
+<div class="product"><a href="MT9.html"><img src="gongzhonghao.jpg"><div>制动噪声振动测量系统MT6-Pro-NVH<br>增强型NVH测量设备。</div></a></div>
+<div class="product"><a href="MT9.html"><img src="gongzhonghao.jpg"><div>制动噪声振动测量系统MT6-Pro-NVH<br>增强型NVH测量设备。</div></a></div>
+<div class="product"><a href="MT9.html"><img src="gongzhonghao.jpg"><div>制动噪声振动测量系统MT6-Pro-NVH<br>增强型NVH测量设备。</div></a></div>
+<div class="product"><a href="MT9.html"><img src="gongzhonghao.jpg"><div>制动噪声振动测量系统MT6-Pro-NVH<br>增强型NVH测量设备。</div></a></div>
+<h3 id="DTV">DTV</h3>
+<img src="gongzhonghao.jpg">
+<h3 id="sensor">制动测试相关传感器及组件</h3>
+<img src="gongzhonghao.jpg">
+<h3>Copyright 2025 上海好耐电子科技有限公司 版权所有</h3>
+<h3><a href="https://beian.miit.gov.cn">沪ICP备08024273号-3</a></h3>
+<script>
+function f(){
+    let width = document.body.clientWidth;
+    if(width < 680){
+        let products = document.getElementsByClassName("product");
+        for(let i=0; i<products.length; i++){
+            products[i].style.display="block";
+            products[i].style.width=width-40+"px";
+            products[i].style.margin="10px auto";
+            products[i].lastChild.lastChild.style.width=width-160+"px";
+        }
+    }else{
+        let products = document.getElementsByClassName("product");
+        for(let i=0; i<products.length; i++){
+            products[i].style.display="inline-block";
+            products[i].style.width="290px";
+            products[i].style.margin="10px 10px";
+            products[i].lastChild.lastChild.style.width="175px";
+        }
+    }
+}
+f();
+window.onresize = f;
+</script>
+</body>
+</html>
