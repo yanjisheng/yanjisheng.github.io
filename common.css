@@ -11,10 +11,10 @@ ul{
     margin: 0px;
 }
 ul.navigator{
-    background-color: #000066;
+    background-color: #003399;
 }
 ul.products{
-    background-color: #ff7777;
+    background-color: #97c6ea;
 }
 ul>li{
     display: inline-block;
@@ -32,41 +32,68 @@ ul>li>a{
 ul>li>a:hover{
     color: #ffff00;
 }
+ul.products>li>a{
+    color: #000066;
+}
+ul.products>li>a:hover{
+    color: #660000;
+}
 div.product{
     display: inline-block;
-    width: 290px;
-    height: 105px;
+    width: 293px;
+    min-height: 105px;
     margin: 10px 10px;
     padding: 10px;
-    background-color: #7777ff;
+    background-color: #ccccee;
     border-radius: 10px;
     vertical-align: top;
 }
 div.product img{
-    max-height: 100%;
-    max-width: 105px;
+    height: 105px;
+    width: 105px;
     display: inline;
+    object-fit: contain;
 }
 div.product div{
     width: 175px;
     max-height: 100%;
-    overflow: hidden;
     display: inline-block;
     vertical-align: top;
     padding-left: 10px;
+    line-height: 21px;
 }
 div.product a:hover{
-    color: #ffffff;
+    color: #0000ff;
 }
 p{
     text-indent: 2em;
     font-size: 16px;
+    white-space: pre-wrap;
+    text-align: justify;
 }
 a{
     color: #000066
 }
+input[type=text]{
+    width: 100px;
+    height: 18px;
+    border: 0px;
+    padding: 1px 4px;
+    margin: 0;
+}
+input[type=submit]{
+    height: 20px;
+    border: 0px;
+    padding: 1px 4px;
+    margin: 0;
+}
 img{
     max-width: 100%;
+    max-height: 350px;
+}
+body>img{
+    display: block;
+    margin: auto;
 }
 body{
     max-width: 1000px;
