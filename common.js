@@ -1,4 +1,4 @@
-function f(){
+function resize(){
     let width = document.body.clientWidth;
     let products = document.getElementsByClassName("product");
     if(products.length <= 0){
@@ -29,17 +29,21 @@ function f(){
             products[i].lastChild.lastChild.style.paddingLeft="10px";
         }
     }
+    return products.length;
 }
-var r = f();
-if(r !== -1){
-    window.onresize = f;
+var r = resize();
+if(r > 0){
+    window.onresize = resize;
 }
 function language(){
-    alert("English version currently not available.");
+    window.open("https://www.mthorizon.com?_l=en");
+    //alert("English version currently not available.");
 }
 function search(){
     keyword = document.getElementById("keyword").value;
-    window.open("https://cn.bing.com/search?q="+keyword+"+site%3amthorizon.com");
+    if(keyword.length > 0){
+        window.open("https://cn.bing.com/search?q="+keyword+"+site%3amthorizon.com");
+    }
 }
 document.getElementById("search").onclick = search;
 document.getElementById("keyword").onkeydown = function(e){
