@@ -31,6 +31,7 @@ ul>li{
 }
 ul.navigator>li{
     padding: 20px;
+    font-weight: bold;
 }
 ul.products>li{
     padding: 10px;
@@ -87,6 +88,9 @@ p{
 a{
     color: #000066
 }
+input{
+    font-family: inherit;
+}
 input[type=text]{
     max-width: 100px;
     width: 90%;
@@ -116,4 +120,5 @@ body{
     margin: auto;
     font-size: 0;
     word-break: break-word;
+    font-family: comic sans ms, 仿宋, sans-serif;
 }
