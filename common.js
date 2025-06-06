@@ -36,8 +36,18 @@ if(r > 0){
     window.onresize = resize;
 }
 function language(){
-    window.open("https://www.mthorizon.com?_l=en");
-    //alert("English version currently not available.");
+    window.location.href = "English.html";
+/*    let q2 = window.confirm("Do you want to go to mt-horizon.com?\nThis site belongs tho the USA corporation.");
+    if(q2){
+        window.open("https://mt-horizon.com");
+        return;
+    }
+    let q1 = window.confirm("Do you want to go to the English site of mthorizon.com?\nThis site belongs to the China corporation.");
+    if(q1){
+        window.open("https://www.mthorizon.com?_l=en");
+        return;
+    }
+    window.alert("English version currently not available.\nPlease use browser's translation function.");*/
 }
 function search(){
     keyword = document.getElementById("keyword").value;
