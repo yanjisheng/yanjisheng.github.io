@@ -37,20 +37,22 @@ if(r > 0){
 }
 function language(){
     window.location.href = "English.html";
-/*    let q2 = window.confirm("Do you want to go to mt-horizon.com?\nThis site belongs tho the USA corporation.");
-    if(q2){
-        window.open("https://mt-horizon.com");
-        return;
+}
+var keywords = ["测力台", "电荷放大器", "制动测试", "温度", "噪声", "压力"];
+var index = Math.floor(Math.random() * keywords.length);
+function updateKeyword(){
+    if(index >= keywords.length){
+        index = 0;
     }
-    let q1 = window.confirm("Do you want to go to the English site of mthorizon.com?\nThis site belongs to the China corporation.");
-    if(q1){
-        window.open("https://www.mthorizon.com?_l=en");
-        return;
-    }
-    window.alert("English version currently not available.\nPlease use browser's translation function.");*/
+    document.getElementById("keyword").value = keywords[index];
+    index += 1;
+}
+var u = setInterval(updateKeyword, 10000);
+document.getElementById("keyword").onfocus = function(){
+    clearInterval(u);
 }
 function search(){
-    keyword = document.getElementById("keyword").value;
+    let keyword = document.getElementById("keyword").value;
     if(keyword.length > 0){
         window.open("https://cn.bing.com/search?q="+keyword+"+site%3amthorizon.com");
     }
