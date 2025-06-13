@@ -77,6 +77,19 @@ div.product div{
 div.product a:hover{
     color: #0000ff;
 }
+div.top{
+    font-size: 16px;
+    line-height: 20px;
+    position: fixed;
+    right: 10px;
+    bottom: 93px;
+    border: 1px solid #000066;
+    padding: 0px 4px;
+    background-color: #ffffff;
+}
+div.top a{
+    text-decoration: none;
+}
 p{
     text-indent: 2em;
     font-size: 16px;
