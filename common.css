@@ -20,10 +20,10 @@ ul{
     margin: 0px;
 }
 ul.navigator{
-    background-color: #003399;
+    background-color: #114499;
 }
 ul.products{
-    background-color: #97c6ea;
+    background-color: #eeeeee;
 }
 ul>li{
     display: inline-block;
@@ -55,7 +55,7 @@ div.product{
     min-height: 105px;
     margin: 10px 10px;
     padding: 10px;
-    background-color: #ccccee;
+    background-color: #eeeeee;
     border-radius: 10px;
     vertical-align: top;
 }

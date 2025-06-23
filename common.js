@@ -23,9 +23,9 @@ function resize(){
     }else{
         for(let i=0; i<products.length; i++){
             products[i].style.display="inline-block";
-            products[i].style.width="293px";
+            products[i].style.width=width/2-42+"px";
             products[i].style.margin="10px 10px";
-            products[i].lastChild.lastChild.style.width="178px";
+            products[i].lastChild.lastChild.style.width=width/2-157+"px";
             products[i].lastChild.lastChild.style.paddingLeft="10px";
         }
     }
@@ -63,3 +63,13 @@ document.getElementById("keyword").onkeydown = function(e){
         search();
     }
 }
+var navigatorDom = document.getElementsByClassName("navigator")[0];
+var insertBeforeDom = navigatorDom.children[3];
+var newDom = document.createElement("li");
+var url = window.location.href;
+if(url.indexOf("English.html") == url.length-12){
+    newDom.innerHTML = '<a href="application.html">Application</a>';
+}else{
+    newDom.innerHTML = '<a href="application.html">产业应用</a>';
+}
+navigatorDom.insertBefore(newDom, insertBeforeDom);
