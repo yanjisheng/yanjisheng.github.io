@@ -1,5 +1,6 @@
-h1, h2, h3{
+h1, h2, h3, h6{
     text-align: center;
+    font-weight: bold;
 }
 h1{
     font-size: 26px;
@@ -12,6 +13,11 @@ h2{
 h3{
     font-size: 18px;
     margin: 10px;
+}
+h6{
+    font-size: 12px;
+    margin: 10px;
+    font-weight: normal;
 }
 ul{
     display: inline-block;

@@ -21,14 +21,20 @@
 <h3>测试页面</h3>
 <p>您的页面宽度：<span id="page_width"></span>px</p>
 <p>您的窗口宽度：<span id="window_width"></span>px</p>
+<p>您的页面高度：<span id="page_height"></span>px</p>
+<p>您的窗口高度：<span id="window_height"></span>px</p>
 <h3>Copyright 2025 上海好耐电子科技有限公司 版权所有</h3>
 <h3><a href="https://beian.miit.gov.cn" target="_blank">沪ICP备08024273号-3</a></h3>
 <script src="common.js"></script>
 <script>
 var clientWidth = document.body.clientWidth;
 var windowWidth = window.innerWidth;
+var clientHeight = document.body.clientHeight;
+var windowHeight = window.innerHeight;
 document.getElementById("page_width").innerText = clientWidth;
 document.getElementById("window_width").innerText = windowWidth;
+document.getElementById("page_height").innerText = clientHeight;
+document.getElementById("window_height").innerText = windowHeight;
 </script>
 </body>
 </html>

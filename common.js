@@ -72,4 +72,6 @@ if(url.indexOf("English.html") == url.length-12){
 }else{
     newDom.innerHTML = '<a href="application.html">产业应用</a>';
 }
-navigatorDom.insertBefore(newDom, insertBeforeDom);
+if(navigatorDom.children.length == 7){
+    navigatorDom.insertBefore(newDom, insertBeforeDom);
+}
