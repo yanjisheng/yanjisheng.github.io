@@ -42,6 +42,9 @@ ul.navigator>li{
 ul.products>li{
     padding: 10px;
 }
+ul.products>li:first-child{
+    font-weight: bold;
+}
 ul>li>a{
     color: #ffffff;
     text-decoration: none;
