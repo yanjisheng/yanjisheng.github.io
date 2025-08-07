@@ -38,7 +38,7 @@ if(r > 0){
 function language(){
     window.location.href = "English.html";
 }
-var keywords = ["测力台", "电荷放大器", "制动测试", "温度", "噪声", "压力"];
+var keywords = ["测力台", "电荷放大器", "制动测试", "温度", "数据采集", "三向力"];
 var index = Math.floor(Math.random() * keywords.length);
 function updateKeyword(){
     if(index >= keywords.length){
@@ -63,15 +63,15 @@ document.getElementById("keyword").onkeydown = function(e){
         search();
     }
 }
-var navigatorDom = document.getElementsByClassName("navigator")[0];
-var insertBeforeDom = navigatorDom.children[3];
-var newDom = document.createElement("li");
-var url = window.location.href;
-if(url.indexOf("English.html") == url.length-12){
-    newDom.innerHTML = '<a href="application.html">Application</a>';
-}else{
-    newDom.innerHTML = '<a href="application.html">产业应用</a>';
-}
-if(navigatorDom.children.length == 7){
-    navigatorDom.insertBefore(newDom, insertBeforeDom);
-}
+//var navigatorDom = document.getElementsByClassName("navigator")[0];
+//var insertBeforeDom = navigatorDom.children[3];
+//var newDom = document.createElement("li");
+//var url = window.location.href;
+//if(url.indexOf("English.html") == url.length-12){
+//    newDom.innerHTML = '<a href="application.html">Application</a>';
+//}else{
+//    newDom.innerHTML = '<a href="application.html">产业应用</a>';
+//}
+//if(navigatorDom.children.length == 7){
+//    navigatorDom.insertBefore(newDom, insertBeforeDom);
+//}
