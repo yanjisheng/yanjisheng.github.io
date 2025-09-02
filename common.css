@@ -46,10 +46,12 @@ ul.products>li:first-child{
     font-weight: bold;
 }
 ul>li>a{
-    color: #ffffff;
     text-decoration: none;
 }
-ul>li>a:hover{
+ul.navigator>li>a{
+    color: #ffffff;
+}
+ul.navigator>li>a:hover{
     color: #ffff00;
 }
 ul.products>li>a{
@@ -143,4 +145,23 @@ body{
     font-size: 0;
     word-break: break-word;
     font-family: sans-serif;
+}
+/*特殊日期使用*/
+ul.navigator{
+    background-color: #666666;
+}
+ul.navigator>li>a:hover{
+    color: #eeeeee;
+}
+ul.products>li>a{
+    color: #000000;
+}
+ul.products>li>a:hover{
+    color: #333333;
+}
+div.product a:hover{
+    color: #333333;
+}
+a{
+    color: #000000;
 }
