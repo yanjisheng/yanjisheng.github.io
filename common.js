@@ -1,3 +1,7 @@
+var url = window.location.href;
+var url1 = "";
+url1 = url.substring(url.lastIndexOf("/"));
+window.location.href = "https://www.mthorizon.com" + url1;
 function resize(){
     let width = document.body.clientWidth;
     let products = document.getElementsByClassName("product");
@@ -63,15 +67,3 @@ document.getElementById("keyword").onkeydown = function(e){
         search();
     }
 }
-//var navigatorDom = document.getElementsByClassName("navigator")[0];
-//var insertBeforeDom = navigatorDom.children[3];
-//var newDom = document.createElement("li");
-//var url = window.location.href;
-//if(url.indexOf("English.html") == url.length-12){
-//    newDom.innerHTML = '<a href="application.html">Application</a>';
-//}else{
-//    newDom.innerHTML = '<a href="application.html">产业应用</a>';
-//}
-//if(navigatorDom.children.length == 7){
-//    navigatorDom.insertBefore(newDom, insertBeforeDom);
-//}
