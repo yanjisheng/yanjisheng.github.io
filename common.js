@@ -1,7 +1,7 @@
 var url = window.location.href;
 var url1 = "";
 url1 = url.substring(url.lastIndexOf("/"));
-window.location.href = "https://www.mthorizon.com" + url1;
+//window.location.href = "https://www.mthorizon.com" + url1;
 function resize(){
     let width = document.body.clientWidth;
     let products = document.getElementsByClassName("product");
@@ -66,4 +66,5 @@ document.getElementById("keyword").onkeydown = function(e){
     if(e.key === "Enter"){
         search();
     }
+
 }
