@@ -1,7 +1,6 @@
 var url = window.location.href;
 var url1 = "";
 url1 = url.substring(url.lastIndexOf("/"));
-//window.location.href = "https://www.mthorizon.com" + url1;
 function resize(){
     let width = document.body.clientWidth;
     let products = document.getElementsByClassName("product");
@@ -58,7 +57,7 @@ document.getElementById("keyword").onfocus = function(){
 function search(){
     let keyword = document.getElementById("keyword").value;
     if(keyword.length > 0){
-        window.open("https://cn.bing.com/search?q="+keyword+"+site%3amthorizon.com");
+        window.open("https://cn.bing.com/search?q="+keyword);
     }
 }
 document.getElementById("search").onclick = search;
@@ -66,5 +65,4 @@ document.getElementById("keyword").onkeydown = function(e){
     if(e.key === "Enter"){
         search();
     }
-
 }
