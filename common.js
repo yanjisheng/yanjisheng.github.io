@@ -41,7 +41,7 @@ if(r > 0){
 function language(){
     window.location.href = "English.html";
 }
-var keywords = ["测力台", "电荷放大器", "制动测试", "温度", "数据采集", "三向力"];
+var keywords = ["颜姬"];
 var index = Math.floor(Math.random() * keywords.length);
 function updateKeyword(){
     if(index >= keywords.length){
@@ -66,3 +66,4 @@ document.getElementById("keyword").onkeydown = function(e){
         search();
     }
 }
+
