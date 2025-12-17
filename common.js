@@ -41,7 +41,7 @@ if(r > 0){
 function language(){
     window.location.href = "English.html";
 }
-var keywords = ["颜姬"];
+var keywords = ["颜姬Channel", "娃娃遥控器"];
 var index = Math.floor(Math.random() * keywords.length);
 function updateKeyword(){
     if(index >= keywords.length){
@@ -66,4 +66,5 @@ document.getElementById("keyword").onkeydown = function(e){
         search();
     }
 }
+
 
